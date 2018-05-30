@@ -1,0 +1,12 @@
+header {
+    text-align: right;
+}
+.header-menu {
+    display: inline;
+}
+.header-menu .header-menu-item {
+    display: inline;
+}
+main * {
+    text-align: center;
+}
