@@ -8,35 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <ul class="header-menu">
-            <li class="header-menu-item"><a href="http://">Почта</a></li>
-            <li class="header-menu-item"><a href="http://">Картинки</a></li>
-            <li class="header-menu-item"><a href="http://"><img src="img/menu.png" alt=""></a></li>
-            <li class="header-menu-item"><a href="http://"><img src="img/notify.png" alt=""></a></li>
-            <li class="header-menu-item"><a href="http://"><img src="img/profile.png" alt=""></a></li>
-        </ul>
-    </header>
-    <main>
-        <div>
-            <img src="img/logo.png" alt="">
-        </div>
-        <div>
-            <input type="text">
-        </div>
-        <div>
-            <button>поиск</button><button>повезет</button>
-        </div>
-        <p>Сервисы Google доступны на разных языках: <a href="http://">English</a> <a href="http://">українська</a></p>
-    </main>
-    <footer>
-        <div><a href="http://">Украина</a></div>
-        <div>
-            <ul class="footer-menu">
-                <li class="footer-menu-item">Реклама</li>
-                <li class="footer-menu-item">Для бизнеса</li>
-                <li class="footer-menu-item">Всё о Google</li>
+    <header class="header">
+        <div class="wrapper">
+            <ul class="menu menu--header">
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)">Почта</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)">Картинки</a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)"><img src="img/menu.png" alt=""></a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)"><img src="img/notify.png" alt=""></a></li>
+                <li class="menu__item"><a class="menu__link" href="javascript:void(0)"><img src="img/profile.png" alt=""></a></li>
             </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div>
+                <img src="img/logo.png" alt="">
+            </div>
+            <form action="" class="form">
+                <div class="form__field">
+                    <input type="text" name="text" class="form__input">
+                </div>
+                <div class="form__field">
+                    <button type="submit" class="form__submit">Поиск в Google</button>
+                    <button type="submit" class="form__submit">Мне повезет!</button>
+                </div>
+            </form>
+            <p>Сервисы Google доступны на разных языках: <a href="javascript:void(0)">English</a> <a href="javascript:void(0)">українська</a></p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__border">
+                <p>Украина</p>
+            </div>
+            <div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Реклама</a></li>
+                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Для бизнеса</a></li>
+                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Всё о Google</a></li>
+                </ul>
+                <ul class="menu menu--side">
+                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Конфиденциальность</a></li>
+                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Условия</a></li>
+                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Настройки</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
